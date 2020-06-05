@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+    <style>
+        body{
+            background-image: url(https://wallpaperheart.com/wp-content/uploads/2018/04/Scenic-Mountain-HD-Wallpapers-scenery-hd-wallpaper.jpg);
+        }
+        .center{
+            height:657px;
+            width:700px;
+            margin: 0;
+            position: absolute;
+            top: 50%;
+            -ms-transform: translateY(-50%);
+            transform: translate(45%,-50%);
+            background-color:rgba(255,255,255,0.4)
+        }
+        .button1 {
+            background:rgba(200, 225, 233, 0.6);
+            cursor:pointer;
+            border-radius: 10px;
+            position: relative;
+            display: inline-block;
+            padding: 10px 20px;
+            color: black;
+            font-size: 25px;
+            font-weight:400;
+            text-decoration: none;
+            text-transform: uppercase;
+            overflow: hidden;
+            transition: .5s;
+            margin-top: 40px;
+            letter-spacing: 4px
+            }
+              
+            .button1:hover {
+            background: #03e9f4;
+            color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 0 5px #03e9f4,
+                        0 0 25px #03e9f4,
+                        0 0 50px #03e9f4,
+                        0 0 100px #03e9f4;
+            }
+            .custom-file-upload {
+                background-color: rgb(123, 229, 255);
+                font-size: 20px;
+                font-weight: 400;
+                display: inline-block;
+                padding: 6px 12px;
+                cursor: pointer;
+                transform:translate(0%,350%);
+                color:black;
+                text-transform: uppercase;
+                text-decoration: none;
+                padding: 20px;
+                transition: all 0.4s ease 0s;
+                border-radius: 10px;
+            }
+            .custom-file-upload:hover {
+                background-color: rgba(255,255,255,0.1);
+                letter-spacing: 1px;
+                }
+            input[type="file"] {
+                position: absolute; 
+                left: -99999rem;
+            }
+
+
+    </style>
+    <body>
+        
+        <form method="POST" action="{% url "myapp:index" %}" enctype="multipart/form-data" class="center">
+            {% csrf_token %}
+            <center>
+            <h1 style="font-size:200%;">
+            Upload Your 'inbox' Folder </h1>
+            <h1 style="font-size:200%;">To Get a CSV File of the data</h1>
+            </center>
+            <center><label class="custom-file-upload" style="transform:translate(0%,150%);">Choose folder<input type="file" name="files" required="True" webkitdirectory="" directory=""/></label></center>
+            <br>
+            <center>
+            <input class="button1" type="submit" value="SUBMIT" style="transform:translate(0%,150%);">
+            <p style="font-family: 'Times New Roman', Times, serif;transform:translate(0%,1500%);color:white"><b>Made by Ng Yin Joe     2020</b></p>
+
+    
+        </center>
+        </form>
+
+    </body>
+    
+
+</html>
