@@ -1,0 +1,1 @@
+web: gunicorn fb_scraper.wsgi --log-file -

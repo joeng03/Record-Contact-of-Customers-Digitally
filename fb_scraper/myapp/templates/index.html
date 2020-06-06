@@ -5,7 +5,7 @@
             background-image: url(https://wallpaperheart.com/wp-content/uploads/2018/04/Scenic-Mountain-HD-Wallpapers-scenery-hd-wallpaper.jpg);
         }
         .center{
-            height:657px;
+            height:605px;
             width:700px;
             margin: 0;
             position: absolute;
@@ -72,21 +72,19 @@
         <form method="POST" action="{% url "myapp:index" %}" enctype="multipart/form-data" class="center">
             {% csrf_token %}
             <center>
-            <h1 style="font-size:200%;">
+            <h1 style="font-size:200%;font-family:sans-serif;color:azure;">
             Upload Your 'inbox' Folder </h1>
-            <h1 style="font-size:200%;">To Get a CSV File of the data</h1>
+            <h1 style="font-size:200%;font-family:sans-serif;color:azure;">To Get a CSV File of the data</h1>
             </center>
-            <center><label class="custom-file-upload" style="transform:translate(0%,150%);">Choose folder<input type="file" name="files" required="True" webkitdirectory="" directory=""/></label></center>
+            <center><label class="custom-file-upload" style="transform:translate(0%,125%);">Choose folder<input type="file" name="files" required="True" webkitdirectory="" directory=""/></label></center>
             <br>
             <center>
-            <input class="button1" type="submit" value="SUBMIT" style="transform:translate(0%,150%);">
-            <p style="font-family: 'Times New Roman', Times, serif;transform:translate(0%,1500%);color:white"><b>Made by Ng Yin Joe     2020</b></p>
-
-    
+            <input class="button1" type="submit" value="SUBMIT" style="transform:translate(0%,125%);">
+            <div style="transform:translate(0%,200%)">
+            <p style="font-family: 'Times New Roman', Times, serif;color:black"><b>Made by Ng Yin Joe &nbsp &nbsp 2020</b></p><br>
+            <a href="https://github.com/joeng03/Record-Contact-of-Customers-Digitally"><b>https://github.com/joeng03/Record-Contact-of-Customers-Digitally</b></a></div>
         </center>
         </form>
 
     </body>
-    
-
 </html>
