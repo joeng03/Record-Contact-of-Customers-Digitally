@@ -15,7 +15,7 @@ def index(request):
 			write_to_csv(file,rows_list)
 	df=pd.DataFrame(rows_list)
 	response = HttpResponse(content_type='text/csv')
-	response['Content-Disposition'] = 'attachment; filename="new_csv.csv"'
+	response['Content-Disposition'] = 'attachment; filename="messages.csv"'
 	df.to_csv(path_or_buf=response,index=False)
 	return response
 
