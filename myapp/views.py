@@ -10,7 +10,8 @@ def index(request):
 	if "GET" == request.method:
 		return render(request,'index.html')
 	rows_list=[]
-	if request.FILES.get('file').name=='message_1.html':
+	file=request.FILES.get('file')
+	if file.name=='message_1.html':
 		write_to_csv(file,rows_list)
 	df=pd.DataFrame(rows_list)
 	response = HttpResponse(content_type='text/csv')
