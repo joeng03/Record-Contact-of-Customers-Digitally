@@ -13,4 +13,4 @@ Pros of recording contact of customers digitally:
 2. Reduces the wastage of paper
 3. Less manpower needed to supervise the customers
 
-*Format of the message the customers should follow: NAME,PHONE_NUMBER,TEMPERATURE (in a single message)
+*Customers should include their details in a single message, for example: NAME, PHONE_NUMBER, TEMPERATURE
